@@ -1,5 +1,6 @@
 class TTexts {
   // Global Texts
+  static const String done = "Done";
   static const String submit = "Submit";
   static const String appName = "PurchasePoint";
   static const String tContinue = "Continue";
@@ -51,7 +52,7 @@ class TTexts {
   static const String forgetPasswordTitle = "Forget password";
   static const String forgetPasswordSubTitle =
       "Enter your email and we will send you a password reset link";
-  static const String changeYourPasswordTitle = "Password reset email sent";
+  static const String changeYourPasswordTitle = "Password Reset Email Sent";
   static const String changeYourPasswordSubTitle =
       "We've sent you a Secure link to safely change your Password and keep your account protected.";
   static const String confirmEmail = "Verify your email address";
@@ -60,7 +61,7 @@ class TTexts {
   static const String emailNotReceivedMessage =
       "Didn't get the email? Check your junk/spam or resend it.";
   static const String yourAccountCreatedTitle =
-      "Your account successfully created.";
+      "Your account has been created successfully.";
   static const String yourAccountCreatedSubTitle =
       "Welcome to your ultimate Shopping Destination. Your account is created, Enjoy Shopping with PurchasePoint.";
 }

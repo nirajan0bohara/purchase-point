@@ -1,49 +1,48 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:purchasepoint/common/styles/spacing_styles.dart';
+import 'package:get/get.dart';
+import 'package:purchasepoint/utils/constants/image_strings.dart';
 import 'package:purchasepoint/utils/constants/sizes.dart';
 import 'package:purchasepoint/utils/constants/text_strings.dart';
 import 'package:purchasepoint/utils/helpers/helper_functions.dart';
 
-class SuccessScreen extends StatelessWidget {
-  const SuccessScreen(
-      {super.key,
-      required this.image,
-      required this.title,
-      required this.subTitle,
-      this.onPressed});
+class ResetPassword extends StatelessWidget {
+  const ResetPassword({super.key});
 
-  final String image, title, subTitle;
-  final VoidCallback? onPressed;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        actions: [
+          IconButton(
+            onPressed: () => Get.back(),
+            icon: const Icon(CupertinoIcons.clear),
+          ),
+        ],
+      ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: TSpacingStyle.paddingWithAppBarHeight * 2,
+          padding: const EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
             children: [
-              //Image
+              //Image with 60% of screen width
+
               Image(
-                image: AssetImage(image),
+                image: const AssetImage(TImages.verifyEmail),
                 width: THelperFunctions.screenWidth() * 0.7,
                 height: THelperFunctions.screenWidth() * 0.7,
               ),
               const SizedBox(height: TSizes.spaceBtwSections),
               //Title and subtitle
               Text(
-                title,
+                TTexts.changeYourPasswordTitle,
                 style: Theme.of(context).textTheme.headlineMedium,
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: TSizes.spaceBtwItems),
               Text(
-                'support@purchasepoint.com',
-                style: Theme.of(context).textTheme.labelLarge,
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: TSizes.spaceBtwItems),
-              Text(
-                subTitle,
+                TTexts.changeYourPasswordSubTitle,
                 style: Theme.of(context).textTheme.labelMedium,
                 textAlign: TextAlign.center,
               ),
@@ -52,8 +51,16 @@ class SuccessScreen extends StatelessWidget {
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: onPressed,
-                  child: const Text(TTexts.tContinue),
+                  onPressed: () {},
+                  child: const Text(TTexts.done),
+                ),
+              ),
+              const SizedBox(height: TSizes.spaceBtwItems),
+              SizedBox(
+                width: double.infinity,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text(TTexts.resendEmail),
                 ),
               ),
             ],

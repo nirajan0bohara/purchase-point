@@ -2,7 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:purchasepoint/features/authentication/screens/onboarding/onboarding.dart';
-import 'features/personalization/screens/home_page.dart';
 import 'utils/theme/theme.dart';
 
 class MyApp extends StatelessWidget {
