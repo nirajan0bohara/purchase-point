@@ -19,4 +19,16 @@ class TImages {
   static const String verifyEmail =
       "assets/images/signup/verify_your_email.png";
   static const String verifiedEmail = "assets/images/signup/email_verified.png";
+
+  //Category Icons
+  static const String sportIcon = "assets/icons/categories/sports.png";
+  static const String clothIcon = "assets/icons/categories/clothes-rack.png";
+  static const String shoeIcon = "assets/icons/categories/shoes.png";
+  static const String cosmeticIcon = "assets/icons/categories/cosmetics.png";
+  static const String toyIcon = "assets/icons/categories/toys.png";
+  static const String furnitureIcon = "assets/icons/categories/sofa.png";
+  static const String electronicIcon = "assets/icons/categories/device.png";
+  static const String jwelleryIcon = "assets/icons/categories/jewelry.png";
+  static const String vechileIcon = "assets/icons/categories/vehicles.png";
+  static const String booksIcon = "assets/icons/categories/booksIcon.png";
 }
