@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:purchasepoint/utils/constants/sizes.dart';
 
 class TRoundedImage extends StatelessWidget {
   const TRoundedImage({
@@ -6,14 +7,14 @@ class TRoundedImage extends StatelessWidget {
     this.width,
     this.height,
     required this.imageUrl,
-    required this.applyImageRadius,
+    this.applyImageRadius = true,
     this.border,
     this.backgroundColor,
     this.fit,
     this.padding,
-    required this.isNetworkImage,
+    this.isNetworkImage = false,
     this.onPressed,
-    required this.borderRadius,
+    this.borderRadius = TSizes.md,
   });
 
   final double? width, height;

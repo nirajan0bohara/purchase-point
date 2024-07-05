@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:purchasepoint/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:purchasepoint/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:purchasepoint/common/widgets/layouts/grid_layout.dart';
 import 'package:purchasepoint/common/widgets/products/product_cards/product_cart_vertical.dart';
 import 'package:purchasepoint/common/widgets/texts/section_heading.dart';
 import 'package:purchasepoint/features/shop/screens/home/widgets/carousel_slider.dart';
@@ -63,7 +64,7 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 children: [
                   //Carousel Slider
-                  TCarouselSlider(
+                  const TCarouselSlider(
                     banners: [
                       TImages.carasoulBanner1,
                       TImages.carasoulBanner2,
@@ -71,9 +72,14 @@ class HomeScreen extends StatelessWidget {
                       TImages.carasoulBanner1,
                     ],
                   ),
+                  const SizedBox(height: TSizes.spaceBtwSections),
 
                   // Popular Products
-                  TProductCardVertical(),
+                  TGridLayout(
+                    itemcount: 4,
+                    mainAxisExtent: 280,
+                    itemBuilder: (_, index) => TProductCardVertical(),
+                  ),
                 ],
               ),
             ),
