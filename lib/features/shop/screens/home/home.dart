@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:purchasepoint/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:purchasepoint/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:purchasepoint/common/widgets/products/product_cards/product_cart_vertical.dart';
 import 'package:purchasepoint/common/widgets/texts/section_heading.dart';
+import 'package:purchasepoint/features/shop/screens/home/widgets/carousel_slider.dart';
 import 'package:purchasepoint/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:purchasepoint/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:purchasepoint/utils/constants/image_strings.dart';
 import 'package:purchasepoint/utils/constants/sizes.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -12,11 +15,12 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
-            TPrimaryHeaderContainer(
+            //Header
+            const TPrimaryHeaderContainer(
               child: Column(
                 children: [
                   //Appbar
@@ -49,6 +53,27 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   )
+                ],
+              ),
+            ),
+
+            //Body part
+            Padding(
+              padding: const EdgeInsets.all(TSizes.defaultSpace),
+              child: Column(
+                children: [
+                  //Carousel Slider
+                  TCarouselSlider(
+                    banners: [
+                      TImages.carasoulBanner1,
+                      TImages.carasoulBanner2,
+                      TImages.carasoulBanner3,
+                      TImages.carasoulBanner1,
+                    ],
+                  ),
+
+                  // Popular Products
+                  TProductCardVertical(),
                 ],
               ),
             ),

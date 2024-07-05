@@ -18,7 +18,7 @@ class TImages {
   //signup Images
   static const String verifyEmail =
       "assets/images/signup/verify_your_email.png";
-  static const String verifiedEmail = "assets/images/signup/email_verified.png";
+  static const String verifiedEmail = "assets/images/signup/verified_email.png";
 
   //Category Icons
   static const String sportIcon = "assets/icons/categories/sports.png";
@@ -31,4 +31,9 @@ class TImages {
   static const String jwelleryIcon = "assets/icons/categories/jewelry.png";
   static const String vechileIcon = "assets/icons/categories/vehicles.png";
   static const String booksIcon = "assets/icons/categories/booksIcon.png";
+
+  //Carasoul Banner
+  static const String carasoulBanner1 = "assets/images/banners/banner1.jpg";
+  static const String carasoulBanner2 = "assets/images/banners/banner2.jpg";
+  static const String carasoulBanner3 = "assets/images/banners/banner3.jpg";
 }
