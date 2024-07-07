@@ -6,6 +6,7 @@ import 'package:purchasepoint/common/widgets/custom_shapes/containers/primary_he
 import 'package:purchasepoint/common/widgets/list_tile/settings_menu_tile.dart';
 import 'package:purchasepoint/common/widgets/list_tile/user_profile_tile.dart';
 import 'package:purchasepoint/common/widgets/texts/section_heading.dart';
+import 'package:purchasepoint/features/personalization/screens/address/addresses.dart';
 import 'package:purchasepoint/features/personalization/screens/profile/profile.dart';
 import 'package:purchasepoint/utils/constants/colors.dart';
 import 'package:purchasepoint/utils/constants/sizes.dart';
@@ -55,7 +56,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.safe_home,
                     title: 'My Address',
                     subTitle: 'Set shopping delivery address',
-                    onTap: () {},
+                    onTap: () => Get.to(() => const UserAddressScreen()),
                   ),
                   TSettingMenuTile(
                     icon: Iconsax.shopping_cart,
