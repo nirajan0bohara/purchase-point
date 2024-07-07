@@ -52,8 +52,8 @@ class TProductAttributes extends StatelessWidget {
                       Row(
                         children: [
                           const TProductTitleText(
-                              title: 'Stock', smallSize: true),
-                          Text('In Stock',
+                              title: 'Stock:', smallSize: true),
+                          Text(' In Stock',
                               style: Theme.of(context).textTheme.titleMedium),
                         ],
                       ),
