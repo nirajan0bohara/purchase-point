@@ -53,7 +53,8 @@ class HomeScreen extends StatelessWidget {
                         THomeCategories(),
                       ],
                     ),
-                  )
+                  ),
+                  SizedBox(height: TSizes.spaceBtwSections),
                 ],
               ),
             ),
@@ -86,7 +87,7 @@ class HomeScreen extends StatelessWidget {
                   TGridLayout(
                     itemcount: 4,
                     mainAxisExtent: 280,
-                    itemBuilder: (_, index) => TProductCardVertical(),
+                    itemBuilder: (_, index) => const TProductCardVertical(),
                   ),
                 ],
               ),

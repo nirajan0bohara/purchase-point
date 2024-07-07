@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:purchasepoint/utils/constants/colors.dart';
-import 'package:purchasepoint/utils/constants/image_strings.dart';
 import 'package:purchasepoint/utils/constants/sizes.dart';
 import 'package:purchasepoint/utils/helpers/helper_functions.dart';
 
