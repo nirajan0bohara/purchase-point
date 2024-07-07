@@ -33,6 +33,8 @@ dependencies:
   carousel_slider: ^4.2.1
   readmore: ^3.0.0
   flutter_rating_bar: ^4.0.1
+  flutter_launcher_icons: ^0.13.1
+  rename: ^3.0.2
   
 
 dev_dependencies:
@@ -40,6 +42,13 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^3.0.0
+
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logos/purchasepoint-light.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
 
 flutter:
 

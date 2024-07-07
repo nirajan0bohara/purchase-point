@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:purchasepoint/features/shop/screens/cart/cart.dart';
 import 'package:purchasepoint/utils/constants/colors.dart';
 import 'package:purchasepoint/utils/helpers/helper_functions.dart';
 
@@ -8,8 +10,10 @@ class TCartCounterIcon extends StatelessWidget {
     super.key,
     this.iconColor,
     required this.onPressed,
+    this.counterBgColor,
+    this.counterTextColor,
   });
-  final Color? iconColor;
+  final Color? iconColor, counterBgColor, counterTextColor;
   final VoidCallback onPressed;
   @override
   Widget build(BuildContext context) {
@@ -17,7 +21,9 @@ class TCartCounterIcon extends StatelessWidget {
     return Stack(
       children: [
         IconButton(
-          onPressed: onPressed,
+          onPressed: () => Get.to(
+            () => const CartScreen(),
+          ),
           icon: Icon(
             Iconsax.shopping_bag,
             color: iconColor,
@@ -29,14 +35,15 @@ class TCartCounterIcon extends StatelessWidget {
             width: 18,
             height: 18,
             decoration: BoxDecoration(
-              color: dark ? TColors.white : TColors.black,
+              color: counterBgColor ?? (dark ? TColors.white : TColors.black),
               borderRadius: BorderRadius.circular(100),
             ),
             child: Center(
               child: Text(
                 '2',
                 style: Theme.of(context).textTheme.labelLarge!.apply(
-                      color: dark ? TColors.black : TColors.white,
+                      color: counterTextColor ??
+                          (dark ? TColors.black : TColors.white),
                       fontSizeFactor: 0.8,
                     ),
               ),
