@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:purchasepoint/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:purchasepoint/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:purchasepoint/common/widgets/layouts/grid_layout.dart';
 import 'package:purchasepoint/common/widgets/products/product_cards/product_cart_vertical.dart';
 import 'package:purchasepoint/common/widgets/texts/section_heading.dart';
+import 'package:purchasepoint/features/shop/screens/all_products/all_products.dart';
 import 'package:purchasepoint/features/shop/screens/home/widgets/carousel_slider.dart';
 import 'package:purchasepoint/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:purchasepoint/features/shop/screens/home/widgets/home_categories.dart';
@@ -79,7 +81,7 @@ class HomeScreen extends StatelessWidget {
                   TSectionHeading(
                     showActionButton: true,
                     title: 'Popular Products',
-                    onPressed: () {},
+                    onPressed: () => Get.to(() => const AllProducts()),
                   ),
                   const SizedBox(height: TSizes.spaceBtwItems),
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:purchasepoint/common/widgets/appbar/appbar.dart';
 import 'package:purchasepoint/common/widgets/appbar/tabbar.dart';
@@ -7,6 +8,7 @@ import 'package:purchasepoint/common/widgets/layouts/grid_layout.dart';
 import 'package:purchasepoint/common/widgets/brand/brand_card.dart';
 import 'package:purchasepoint/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:purchasepoint/common/widgets/texts/section_heading.dart';
+import 'package:purchasepoint/features/shop/screens/brands/all_brands.dart';
 import 'package:purchasepoint/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:purchasepoint/utils/constants/colors.dart';
 import 'package:purchasepoint/utils/constants/sizes.dart';
@@ -59,7 +61,7 @@ class StoreScreen extends StatelessWidget {
                       TSectionHeading(
                         showActionButton: true,
                         title: 'Featured Brands',
-                        onPressed: () {},
+                        onPressed: () => Get.to(() => const AllBrandsScreen()),
                       ),
                       const SizedBox(height: TSizes.spaceBtwItems / 1.5),
 

@@ -8,6 +8,7 @@ import 'package:purchasepoint/common/widgets/list_tile/user_profile_tile.dart';
 import 'package:purchasepoint/common/widgets/texts/section_heading.dart';
 import 'package:purchasepoint/features/personalization/screens/address/addresses.dart';
 import 'package:purchasepoint/features/personalization/screens/profile/profile.dart';
+import 'package:purchasepoint/features/shop/screens/order/order.dart';
 import 'package:purchasepoint/utils/constants/colors.dart';
 import 'package:purchasepoint/utils/constants/sizes.dart';
 
@@ -68,7 +69,7 @@ class SettingsScreen extends StatelessWidget {
                     icon: Iconsax.bag_tick,
                     title: 'My Orders',
                     subTitle: 'In-progress and completed orders',
-                    onTap: () {},
+                    onTap: () => Get.to(() => const OrderScreen()),
                   ),
                   TSettingMenuTile(
                     icon: Iconsax.bank,
