@@ -59,6 +59,7 @@ class VerifyEmailScreen extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () => Get.to(
                     () => SuccessScreen(
+                      email: 'support@purchasepoint.com',
                       image: TImages.verifiedEmail,
                       title: TTexts.yourAccountCreatedTitle,
                       subTitle: TTexts.yourAccountCreatedSubTitle,
