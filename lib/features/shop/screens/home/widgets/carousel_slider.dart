@@ -42,7 +42,7 @@ class TCarouselSlider extends StatelessWidget {
                   margin: const EdgeInsets.only(right: 10),
                   height: 5,
                   width: 20,
-                  backgroundColor: controller.CarousalCurrentIndex.value == i
+                  backgroundColor: controller.carousalCurrentIndex.value == i
                       ? TColors.primary
                       : TColors.grey,
                 ),
