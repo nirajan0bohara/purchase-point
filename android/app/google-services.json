@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "857730543265",
+    "project_id": "purchasepoint-bff77",
+    "storage_bucket": "purchasepoint-bff77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:857730543265:android:20b76746dde9d541b90ae0",
+        "android_client_info": {
+          "package_name": "com.example.purchasepoint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "857730543265-gg6k10bg2lepoetp9j6q8nm33iltfcdb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.purchasepoint",
+            "certificate_hash": "e4f06340ca1f433a2b2094905d643c83a104bc69"
+          }
+        },
+        {
+          "client_id": "857730543265-1u8sqaob8bgjiop8ib0pi6v54a40afer.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeGh9WwgvX40MJ-B24kSDmqdO6U-EFElA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "857730543265-1u8sqaob8bgjiop8ib0pi6v54a40afer.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "857730543265-uba8o8vu6he50fpgeskmofkmfgvcu18c.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.purchasepoint"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

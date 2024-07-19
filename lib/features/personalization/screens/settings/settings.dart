@@ -6,6 +6,7 @@ import 'package:purchasepoint/common/widgets/custom_shapes/containers/primary_he
 import 'package:purchasepoint/common/widgets/list_tile/settings_menu_tile.dart';
 import 'package:purchasepoint/common/widgets/list_tile/user_profile_tile.dart';
 import 'package:purchasepoint/common/widgets/texts/section_heading.dart';
+import 'package:purchasepoint/data/repositories/authentication/authentication_repository.dart';
 import 'package:purchasepoint/features/personalization/screens/address/addresses.dart';
 import 'package:purchasepoint/features/personalization/screens/profile/profile.dart';
 import 'package:purchasepoint/features/shop/screens/order/order.dart';
@@ -129,7 +130,9 @@ class SettingsScreen extends StatelessWidget {
                   SizedBox(
                     width: double.infinity,
                     child: OutlinedButton(
-                        onPressed: () {}, child: const Text('Logout')),
+                        onPressed: () =>
+                            AuthenticationRepository.instance.logout(),
+                        child: const Text('Logout')),
                   ),
                   const SizedBox(height: TSizes.spaceBtwSections * 2),
                 ],

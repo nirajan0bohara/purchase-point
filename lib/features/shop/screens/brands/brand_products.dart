@@ -12,6 +12,7 @@ class TBrandProducts extends StatelessWidget {
     return const Scaffold(
       appBar: TAppBar(
         title: Text('Goldstar'),
+        showBackArrow: true,
       ),
       body: SingleChildScrollView(
         child: Padding(
